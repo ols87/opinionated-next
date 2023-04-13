@@ -31,7 +31,6 @@
     "cypress": "^12.9.0",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
-    "husky": "^8.0.3",
     "postcss": "^8.4.21",
     "postcss-import": "^15.1.0",
     "prettier": "^2.8.7",
@@ -40,5 +39,8 @@
     "tailwindcss": "^3.3.1",
     "typescript": "5.0.4",
     "typescript-plugin-css-modules": "^5.0.1"
+  },
+  "optionalDependencies": {
+    "husky": "^8.0.3"
   }
 }
