@@ -1,0 +1,55 @@
+html {
+  @apply text-[100%] leading-normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply mt-6 mb-0 leading-snug;
+}
+h1,
+.h1 {
+  @apply text-5xl;
+}
+h2,
+.h2 {
+  @apply text-4xl;
+}
+h3,
+.h3 {
+  @apply text-3xl font-medium;
+}
+h4,
+.h4 {
+  @apply text-2xl font-medium;
+}
+h5,
+.h5 {
+  @apply text-xl font-semibold;
+}
+h6,
+.h6 {
+  @apply text-lg font-semibold;
+}
+
+p {
+  @apply mt-6 mb-0;
+}
+
+.caption {
+  @apply text-sm font-medium;
+}
+
+ul,
+ol {
+  @apply my-6;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  @apply my-0;
+}

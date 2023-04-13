@@ -1,0 +1,44 @@
+{
+  "name": "hindsights",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run clean && next dev",
+    "build": "npm run clean && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore .",
+    "clean": "rimraf ./.next/ && npm run format:fix",
+    "cypress": "cypress open",
+    "e2e": "start-server-and-test dev http://localhost:3000 \"cypress open --e2e\"",
+    "e2e:headless": "start-server-and-test dev http://localhost:3000 \"cypress run --e2e\"",
+    "component": "cypress open --component",
+    "component:headless": "cypress run --component",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.0.8",
+    "next": "13.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.35",
+    "@types/react-dom": "18.0.11",
+    "autoprefixer": "^10.4.14",
+    "cypress": "^12.9.0",
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0",
+    "husky": "^8.0.3",
+    "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
+    "prettier": "^2.8.7",
+    "rimraf": "^5.0.0",
+    "start-server-and-test": "^2.0.0",
+    "tailwindcss": "^3.3.1",
+    "typescript": "5.0.4",
+    "typescript-plugin-css-modules": "^5.0.1"
+  }
+}

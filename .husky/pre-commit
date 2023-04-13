@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run clean && npm run lint && npm run component:headless && npm run e2e:headless
